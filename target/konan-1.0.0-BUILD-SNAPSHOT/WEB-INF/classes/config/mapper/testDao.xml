@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.konan.bundle.kexec.eh030871.dao.KonanCollConnectLogDao">
+
+<!--    <insert id="insertConnecLog" parameterType="KonanCollConnectLog" useGeneratedKeys="true" keyProperty="connectLogId">-->
+<!--        INSERT INTO konan_coll_connect_log (server_ip, server_port, connect_type, connect_user, connect_pwd, state_cd, state_message)-->
+<!--        VALUES (#{serverIp}, #{serverPort}, #{connectType}, #{connectUser}, #{connectPwd}, #{stateCd}, #{stateMessage})-->
+<!--    </insert>-->
+
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mystudy.konan.dao.NewsmlRecordDao">
+
+    <!-- 추후 수정-->
+    <insert id="insertKrNews" parameterType="NewsmlRecordVO" >
+        INSERT INTO kr_news_clct (news_item_id, title, link_page, content)
+        VALUES (#{newsItemId}, #{title}, #{linkPage}, #{content})
+    </insert>
+
+
+</mapper>
