@@ -17,12 +17,26 @@
         				)
     </insert>
     
-    <select id="selectKrNews" resultType="hashmap" >
-		SELECT news_item_id,
-			   title, 
-			   link_page, 
-			   content 
-		  FROM kr_news_clct;
+    <select id="selectRestaurant" parameterType="NewsmlRecordVO"  resultType="hashmap">
+		SELECT list_number,
+			   restaurant_name, 
+			   type, 
+			   etc 
+		  FROM restaurant_list
+		  <choose>
+			  <when test='page != null and page != "0"'>
+			  	LIMIT 10 OFFSET #{page};
+			  </when>
+			  <otherwise>
+			  	LIMIT 10 OFFSET 0;
+			  </otherwise>
+		  </choose>
+
+    </select>
+    
+    <select id="selectRestaurantCount" resultType="hashmap" >
+		SELECT count(*)
+		  FROM restaurant_list;
     </select>
     
     

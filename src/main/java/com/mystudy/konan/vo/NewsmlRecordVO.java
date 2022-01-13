@@ -11,8 +11,18 @@ public class NewsmlRecordVO implements Serializable {
     private String linkPage;
 
     private String content;
+    
+    private int page;
 
-    public String getNewsItemId() {
+    public int getPage() {
+		return page;
+	}
+
+	public void setPage(int page) {
+		this.page = page;
+	}
+
+	public String getNewsItemId() {
         return newsItemId;
     }
 

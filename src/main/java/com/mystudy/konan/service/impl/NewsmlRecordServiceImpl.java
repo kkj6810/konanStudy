@@ -4,10 +4,12 @@ import com.mystudy.konan.dao.NewsmlRecordDao;
 import com.mystudy.konan.service.NewsmlRecordService;
 import com.mystudy.konan.vo.NewsmlRecordVO;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
 
 @Service
 public class NewsmlRecordServiceImpl implements NewsmlRecordService {
@@ -20,8 +22,12 @@ public class NewsmlRecordServiceImpl implements NewsmlRecordService {
         return nrDao.insertKrNews(param);
     }
     @Override
-    public List<?> selectKrNews(){
-    	return nrDao.selectKrNews();
+    public List<?> selectRestaurant(String page){
+    	return nrDao.selectRestaurant(page);
+    }
+    @Override
+    public HashMap selectRestaurantCount(){
+    	return nrDao.selectRestaurantCount();
     }
     @Override
     public int deleteKrNews(NewsmlRecordVO param) {
