@@ -11,7 +11,7 @@ public class NewsmlRecordController {
 
     @Autowired
     NewsmlRecordService newsSvc;
-
+    // insert requestmapping
     @RequestMapping(value = "/insert")
     public String insertDB() {
         NewsmlRecordVO newsRecordVO = new NewsmlRecordVO();
