@@ -7,7 +7,7 @@
 	<!--	 Root Context: defines shared resources visible to all other web components -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
-		<property name="url" value="jdbc:mysql://localhost:4306/newkkj?allowPublicKeyRetrieval=true"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/sakila?allowPublicKeyRetrieval=true"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="konan415!"></property>
 	</bean>
