@@ -24,7 +24,7 @@ public class NewsmlRecordDao {
     
     public List<?> selectRestaurant(String page){
     	NewsmlRecordVO newsRecordVO = new NewsmlRecordVO();
-    	//newsRecordVO.setPage(Integer.parseInt(page));
+    	newsRecordVO.setPage(Integer.parseInt(page));
         return sqlSession.selectList(nameSpace + "selectRestaurant", newsRecordVO);
     }
     public HashMap selectRestaurantCount(){
