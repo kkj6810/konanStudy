@@ -13,9 +13,9 @@
   <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
   <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
 
-  <link rel="stylesheet" href="../assets/fonts/flat-icon/flaticon.css">
-  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../resources/assets/fonts/flat-icon/flaticon.css">
+  <link rel="stylesheet" href="../resources/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../resources/css/styles.css">
 </head>
 <body>
 <div id="content-wrapper">
