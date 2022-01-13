@@ -5,9 +5,42 @@
 
     <!-- 추후 수정-->
     <insert id="insertKrNews" parameterType="NewsmlRecordVO" >
-        INSERT INTO kr_news_clct (news_item_id, title, link_page, content)
-        VALUES (#{newsItemId}, #{title}, #{linkPage}, #{content})
+        INSERT INTO kr_news_clct (
+        			news_item_id, 
+        			title, 
+        			link_page, 
+        			content)
+        		VALUES (#{newsItemId}, 
+        				#{title}, 
+        				#{linkPage}, 
+        				#{content}
+        				)
     </insert>
+    
+    <select id="selectKrNews" resultType="hashmap" >
+		SELECT news_item_id,
+			   title, 
+			   link_page, 
+			   content 
+		  FROM kr_news_clct;
+    </select>
+    
+    
+	<delete id="deleteKrNews" parameterType="NewsmlRecordVO" >
+		DELETE FROM  kr_news_clct
+		WHERE 1=1
+		  AND #{newsItemId}
+    </delete>
+    
+    
+    <update id="updateKrNews" parameterType="NewsmlRecordVO">
+
+    </update>
+    
+   	<update id="updateAndInsertKrNews" parameterType="NewsmlRecordVO" >
+
+    </update>
+    
 
 
 </mapper>
