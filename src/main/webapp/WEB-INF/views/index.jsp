@@ -11,7 +11,7 @@
     <title>index</title>
 </head>
 <body>
-<a href="/main">메인 들어가기</a>
+<a href="/main?page=0">메인 들어가기</a>
 </body>
 </html>
 
